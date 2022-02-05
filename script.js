@@ -42,7 +42,6 @@ function startCountdown(modal, seconds) {
     counterInterval = setInterval(() => {
         let myModal = document.querySelector('[data-id='+modal.id+']');
         let number = myModal.querySelector('#number');
-        console.log(counter);
         number.innerText = --counter;
         if(counter === 0) {
             removeModal(modal);
